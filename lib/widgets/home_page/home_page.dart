@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:senior_flutter_challenge/widgets/feed/feed.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -9,16 +10,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Adventures in Flutter'),
       ),
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'Here are some adventures!',
-            ),
-          ],
-        ),
-      ),
+      body: const Feed(),
     );
   }
 }
